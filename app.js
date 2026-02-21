@@ -1,12 +1,19 @@
+// --- OpenAI, Clarifai, Supabase placeholders ---
 async function analyzeText() {
   const food = document.getElementById("foodInput").value;
-  document.getElementById("result").innerText = "Analyzing...";
+  document.getElementById("result").innerText = "Analyzing text...";
 
-  // سيتم ربط OpenAI هنا لاحقًا
-  document.getElementById("result").innerText = "Feature coming soon";
+  // هنا سنضيف OpenAI لاحقاً لحساب السعرات
+  document.getElementById("result").innerText = "Calories will appear here";
 }
 
 async function analyzeImage() {
+  const fileInput = document.getElementById("imageInput");
+  if (!fileInput.files.length) {
+    alert("Please select an image first");
+    return;
+  }
   document.getElementById("result").innerText = "Analyzing image...";
-  // سيتم ربط Clarifai هنا لاحقًا
+
+  // هنا سنضيف Clarifai لاحقاً لتحليل الصورة
 }
