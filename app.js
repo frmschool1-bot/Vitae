@@ -1,4 +1,4 @@
-// --- OpenAI, Clarifai, Supabase placeholders ---
+// --- Op Clarifai, Supabase placeholders ---
 async function analyzeText() {
   const food = document.getElementById("foodInput").value;
   document.getElementById("result").innerText = "Analyzing text...";
