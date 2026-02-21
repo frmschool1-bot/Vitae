@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitae</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vitae</h1>
+    
+    <div class="input-section">
+      <input type="text" id="foodInput" placeholder="أدخل اسم الطعام">
+      <button onclick="analyzeText()">تحليل النص</button>
+    </div>
+    
+    <div class="input-section">
+      <input type="file" id="imageInput" accept="image/*">
+      <button onclick="analyzeImage()">تحليل الصورة</button>
+    </div>
+    
+    <div id="result"></div>
+    <div id="suggestions"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
